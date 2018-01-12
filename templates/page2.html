@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <h1>Audio quality survey</h1>
+
+    <h2>Rate the audio samples on a scale of 1-5.
+        1 being lowest and 5 being highest.</h2>
+
+</head>
+
+<body>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.5.2.js" type="text/javascript"></script>
+ <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.8/jquery.validate.js" type="text/javascript"></script>
+ <script type="text/javascript">
+     $(function () {
+         $("#myform").validate({
+             rules: {
+                 optradio1: {required:true},
+                 optradio2: {required:true}
+             },
+             messages: {
+                 optradio1: {"You must select a value"}
+                 optradio2: {"You must select a value"}
+             }
+         });
+     });
+
+ </script>
+  <form id = "myform" action="/page3", method="POST">
+  <audio controls style="display:flex">
+    <source src="static/music/s1/{{music_files}}" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container" style="dislay:flex">
+            <label class="radio-inline">
+              <input type="radio" name="optradio1" value="1">1
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio1" value="2">2
+            </label>
+            <label class="radio-inline">
+             <input type="radio" name="optradio1" value='3'>3
+            </label>
+            <label class="radio-inline">
+             <input type="radio" name="optradio1" value='4'>4
+            </label>
+            <label class="radio-inline">
+             <input type="radio" name="optradio1" value='5'>5
+            </label>
+  </div>
+  <br> </br>
+  <audio controls style="display:flex">
+    <source src="static/music/s1/{{music_files2}}" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container" style="dislay:flex">
+    <label class="radio-inline">
+      <input type="radio" name="optradio2" value="1">1
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio2" value="2">2
+    </label>
+    <label class="radio-inline">
+     <input type="radio" name="optradio2" value='3'>3
+    </label>
+    <label class="radio-inline">
+     <input type="radio" name="optradio2" value='4'>4
+    </label>
+    <label class="radio-inline">
+     <input type="radio" name="optradio2" value='5'>5
+    </label>
+  </div>
+  <br> </br>
+  <audio controls style="display:flex">
+    <source src="static/music/s1/{{music_files3}}" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container" style="dislay:flex">
+    <label class="radio-inline">
+      <input type="radio" name="optradio3" value="1">1
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio3" value="2">2
+    </label>
+    <label class="radio-inline">
+     <input type="radio" name="optradio3" value='3'>3
+    </label>
+    <label class="radio-inline">
+     <input type="radio" name="optradio3" value='4'>4
+    </label>
+    <label class="radio-inline">
+     <input type="radio" name="optradio3" value='5'>5
+    </label>
+  </div>
+  <br> </br>
+        <audio controls style="display:flex">
+    <source src="static/music/s1/{{music_files4}}" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container" style="dislay:flex">
+    <label class="radio-inline">
+      <input type="radio" name="optradio4" value="1">1
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio4" value="2">2
+    </label>
+    <label class="radio-inline">
+     <input type="radio" name="optradio4" value='3'>3
+    </label>
+    <label class="radio-inline">
+     <input type="radio" name="optradio4" value='4'>4
+    </label>
+    <label class="radio-inline">
+     <input type="radio" name="optradio4" value='5'>5
+    </label>
+  </div>
+    <input type="submit" value="NEXT"/>
+</form>
+<footer>
+  <p align="center">Page 2 of 3</p>
+</footer>
+</body>
+
+</html>
